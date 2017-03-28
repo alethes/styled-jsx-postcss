@@ -77,9 +77,6 @@ export default function ({types: t}) {
             return
           }
 
-          console.log(!t.isJSXIdentifier(node), name !== STYLE_COMPONENT, name)
-          console.log(path.getSource())
-
           const processing = path
             // get the attribute containing the css
             .get('attributes').filter(({node}) => (
